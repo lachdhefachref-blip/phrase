@@ -1,6 +1,6 @@
 # Checkpoint – Analyse d’une Phrase
 
-## 📌 Objectif
+## Objectif
 Ce checkpoint consiste à écrire un algorithme qui lit une phrase caractère par caractère, se terminant par un point (`.`), afin de déterminer :
 - La longueur de la phrase (nombre de caractères)
 - Le nombre de mots (séparés par un seul espace)
