@@ -1,0 +1,33 @@
+Algorithme AnalysePhrase
+
+Variables
+    c : caractère
+    nbCaractères : entier ← 0
+    nbMots : entier ← 1
+    nbVoyelles : entier ← 0
+
+Début
+    Lire(c)
+
+    Tant que c ≠ '.' faire
+        nbCaractères ← nbCaractères + 1
+
+        // Vérifier si le caractère est une voyelle
+        Si c = 'a' ou c = 'e' ou c = 'i' ou c = 'o' ou c = 'u'
+           ou c = 'A' ou c = 'E' ou c = 'I' ou c = 'O' ou c = 'U' Alors
+            nbVoyelles ← nbVoyelles + 1
+        FinSi
+
+        // Vérifier si le caractère est un espace
+        Si c = ' ' Alors
+            nbMots ← nbMots + 1
+        FinSi
+
+        Lire(c)
+    FinTantQue
+
+    Afficher "Nombre de caractères : ", nbCaractères
+    Afficher "Nombre de mots : ", nbMots
+    Afficher "Nombre de voyelles : ", nbVoyelles
+
+Fin
